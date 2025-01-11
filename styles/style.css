@@ -227,11 +227,11 @@ nav button:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.green-btn {
+.light-green-btn {
     background: rgb(9, 161, 92);
 }
 
-.green-btn:hover {
+.light-green-btn:hover {
     background: rgb(7, 130, 75);
     transform: scale(1.05);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -257,7 +257,7 @@ nav button:hover {
 }
 
 .quote {
-    background-image: url("/assets/quote-bg.png");
+    background-image: url("../assets/quote-bg.png");
     background-repeat: no-repeat;
     background-position: top left;
     padding-top: 23px;
