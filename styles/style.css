@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background: rgb(245, 245, 245);
+}
+
 .default-style {
     max-width: 1280px;
     margin: 20px auto 80px;
@@ -17,6 +21,20 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
+}
+
+.fira-sans-extra-bold {
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.fira-sans-light {
+    color: rgba(14, 14, 14, 0.5);
+    font-family: Fira Sans;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 nav {
@@ -41,5 +59,40 @@ nav button {
 nav button:hover {
     background-color: rgb(0, 106, 80);
     color: white;
-    border-color: rgb(0, 106, 80);
+}
+
+.light-green-bg {
+    border-radius: 24px;
+    background: rgb(198, 228, 214);
+}
+
+.banner {
+    margin-top: 44px;
+    padding: 70px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.btn-green {
+    border-radius: 8px;
+    background: rgb(0, 106, 80);
+    padding: 17px 34px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Fira Sans;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-green:hover {
+    background: rgb(0, 128, 96);
+    transform: scale(1.05);
 }
