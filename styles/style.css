@@ -11,8 +11,16 @@ body {
 
 .default-style {
     max-width: 1280px;
-    margin: 20px auto 80px;
+    margin: 20px auto 70px;
     align-items: center;
+}
+
+.fira-sans-small-bold {
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
 }
 
 .fira-sans-bold {
@@ -30,11 +38,20 @@ body {
     font-weight: 700;
 }
 
-.fira-sans-light {
-    color: rgba(14, 14, 14, 0.5);
+.fira-sans-normal {
+    color: rgba(14, 14, 14, 0.8);
     font-family: Fira Sans;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.fira-sans-light {
+    color: rgba(14, 14, 14, 0.7);
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 nav {
@@ -68,7 +85,7 @@ nav button:hover {
 
 .banner {
     margin-top: 44px;
-    padding: 70px 90px;
+    padding: 50px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,6 +96,14 @@ nav button:hover {
     flex-direction: column;
     align-items: start;
     gap: 24px;
+}
+
+.banner-text p {
+    color: rgba(14, 14, 14, 0.5);
+    font-family: Fira Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
 }
 
 .btn-green {
@@ -95,4 +120,33 @@ nav button:hover {
 .btn-green:hover {
     background: rgb(0, 128, 96);
     transform: scale(1.05);
+}
+
+.pillars-container {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.white-box {
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255); /* original white */
+    padding: 24px;
+    transition: background 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.white-box:hover {
+    background: rgb(250, 250, 250); /* Lighter shade of white to differentiate */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
 }
